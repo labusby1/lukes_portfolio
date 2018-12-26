@@ -17,3 +17,28 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar, .introHomePage {
+    background: #829851;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #829851, #aaa28d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3B435D, #aaa28d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.introHomePage {
+    margin-top: -20px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.navbar {
+    border: none;
+}
+
+//Typography stylization
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: #F6F2E5;
+    &:hover {
+        color: #F6F2E5;
+        opacity: 0.75;
+    }
+}
