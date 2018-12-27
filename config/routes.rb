@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get 'projects', to: 'pages#projects'
   get 'contact', to: 'pages#contact'
   
-  resources :contacts
+  resources :contacts, only: :create
+  get 'contact-luke', to: 'contacts#new', as: 'new_contact'
 end
